@@ -1,0 +1,20 @@
+
+CREATE DATABASE IF NOT EXISTS StudentDB;
+
+USE StudentDB;
+
+CREATE TABLE Student (
+    Student_ID INT PRIMARY KEY,
+    Student_Name VARCHAR(100) NOT NULL,
+    Department VARCHAR(50),
+    Email VARCHAR(100) UNIQUE
+);
+
+INSERT INTO Student VALUES
+(101,'Arun Kumar','CSE','arun@gmail.com'),
+(102,'Priya Sharma','AIML','priya@gmail.com'),
+(103,'Rahul Reddy','ECE','rahul@gmail.com'),
+(104,'Sneha Rao','IT','sneha@gmail.com'),
+(105,'Kiran Kumar','CSE','kiran@gmail.com');
+
+SELECT * FROM Student;
